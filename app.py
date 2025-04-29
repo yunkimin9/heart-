@@ -3,16 +3,13 @@ import pickle
 import streamlit as st
 import numpy as np
 
-# Load the saved model
 model_filename = "C:/Users/Asus/OneDrive/Desktop/heart_disease_model.sav"
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
 
-# Streamlit UI
 st.title('Heart Disease Prediction App')
 st.write("Enter the following details to check for heart disease risk:")
 
-# Input fields for user data
 age = st.number_input('Age', min_value=20, max_value=100, value=50)
 sex = st.selectbox('Sex (0: Female, 1: Male)', [0, 1])
 cpt = st.selectbox('Chest Pain Type (0-3)', [0, 1, 2, 3])
@@ -26,8 +23,6 @@ oldpeak = st.number_input('ST Depression Induced by Exercise', min_value=0.0, ma
 slope = st.selectbox('Slope of Peak Exercise ST Segment (0: Upsloping, 1: Flat , 2: Downsloping )', [0, 1, 2])
 ca = st.selectbox('Number of Major Vessels (0-4)', [0, 1, 2, 3, 4])
 thal = st.selectbox('Thalassemia (genetic blood disorder) (0: No thalassemia, 1: Normal blood flow , 2:Fixed defect (permanent damage in heart) , 3: Reversible defect (temporary blood flow issues))', [0,1,2,3])
-
-# Predict button
 
 if st.button('Predict'):
     if model:
