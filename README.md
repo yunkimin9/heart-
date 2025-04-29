@@ -8,8 +8,7 @@ A Streamlit web app that predicts whether a person has heart disease based on in
 .Model training and evaluation available in Jupyter Notebook.
 
 #How to Set Up and Run the Project
-1. Clone the Repository 
-
+1. Clone the Repository :- (https://github.com/yunkimin9/heart-disease-predictor.git)
 2.Create a Virtual Environment
 
 🪟 For Windows (Microsoft):
