@@ -1,6 +1,7 @@
 #HEART DISEASE PREDICTION APP
 A Streamlit web app that predicts whether a person has heart disease based on input medical data using a trained Machine Learning model.
-
+#Project Description
+Heart Disease Prediction App is a machine learning-based web application built with Streamlit that predicts the likelihood of heart disease based on user-input medical data. The model was trained using supervised learning techniques and integrated into a user-friendly interface, enabling real-time risk assessments. The project includes a Jupyter Notebook for training, testing, and evaluating the model, making it easy to retrain and extend.
 #Features
 .Predicts heart disease based on user inputs.
 .Provides health warnings if risk factors are detected.
